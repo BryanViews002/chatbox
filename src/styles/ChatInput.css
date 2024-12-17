@@ -1,0 +1,78 @@
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.chat-input .emoji-button,
+.chat-input .send-button {
+  background: #075e54;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat-input .emoji-list {
+  position: absolute;
+  bottom: 60px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+/* ChatInput.css */
+.audio-record-button {
+  background-color: #075e54;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.audio-record-button:hover {
+  background-color: #128c7e;
+}
+
+.image-preview {
+  max-width: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Message.css */
+.audio-message {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.audio-message audio {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.image-message {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-message img {
+  max-width: 100%;
+  border-radius: 10px;
+}

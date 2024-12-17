@@ -1,0 +1,76 @@
+/* Container */
+.welcome-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Background Animation */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #4facfe, #ff7e5f, #43e97b, #f57f17);
+  background-size: 300% 300%;
+  animation: gradientAnimation 6s ease-in-out infinite;
+  z-index: -1;
+}
+
+/* Logo */
+.logo img {
+  width: 200px; /* Set the width to 200px */
+  height: auto; /* Auto-adjust height to maintain aspect ratio */
+}
+
+/* Text */
+h1 {
+  margin: 20px 0 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Button */
+.get-started-button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4facfe;
+  background: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.get-started-button:hover {
+  background: #e1f5fe;
+  color: #007bb6;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+}
